@@ -18,7 +18,12 @@ header {
   padding: 2rem 0rem;
   border-bottom: 2px solid #29213f;
   text-align: center;
-  background: linear-gradient(180deg, rgba(29, 135, 40, 1) 38%, rgba(7, 102, 0, 0) 26%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(29, 135, 40, 1) 38%,
+    rgba(7, 102, 0, 0) 26%,
+    rgba(0, 212, 255, 0) 100%
+  );
   display: flex;
   align-content: center;
   justify-content: center;
@@ -123,6 +128,12 @@ h2:hover {
   width: 350px;
 }
 
+#lukasgif {
+  display: block;
+  width: 50%;
+  border-radius: 15px;
+}
+
 .image {
   aspect-ratio: 1;
   border-radius: 50%;
@@ -137,7 +148,7 @@ h2:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #e6f9ff8f;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -162,7 +173,7 @@ h2:hover {
   text-align: center;
   text-decoration-line: underline;
   text-decoration-color: green;
-  text-decoration-style: wavy
+  text-decoration-style: wavy;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -171,84 +182,82 @@ h2:hover {
   main {
     margin: 1rem 3rem;
   }
-  
+
   .boxsection {
-    width:100%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
-
   }
 
   .inline-block {
     width: 90%;
-    padding-right:15px;
-   }
-  
-}
-  /* Small devices (portrait tablets and large phones, 600px to 768px) */
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* CSS rules for small screens */
-    main {
-      margin: 1rem 4rem;
-    }
-    
-    .boxsection {
-      width:75%;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .inline-block {
-      width: 90%;
-      padding-right:15px;
-     }
+    padding-right: 15px;
   }
- 
+}
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* CSS rules for small screens */
+  main {
+    margin: 1rem 4rem;
+  }
+
+  .boxsection {
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inline-block {
+    width: 90%;
+    padding-right: 15px;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   /* CSS rules for medium screens */
   .textsection {
-    width:75%;
-  }
-  
-  .boxsection {
-    width:82%;
-    height: 100%
+    width: 75%;
   }
 
-  .inline-block {
-   margin-right: 10px;
-   padding-right:15px;
-  }
-}
- 
-/* Large devices (laptops/desktops, 992px to 1200px) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  /* CSS rules for large screens */
-  .textsection {
-    width:75%;
-  }
-  
   .boxsection {
-    width:82%;
-    height: 100%
-  }
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1201px) {
-  /* CSS rules for extra large screens */
-  .textsection {
-    width:750px;
-  }
-  
-  .boxsection {
-    width:800px;
-    height: 100%
+    width: 82%;
+    height: 100%;
   }
 
   .inline-block {
     margin-right: 10px;
-    padding-right:15px;
-   }
+    padding-right: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for large screens */
+  .textsection {
+    width: 75%;
+  }
+
+  .boxsection {
+    width: 82%;
+    height: 100%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+  /* CSS rules for extra large screens */
+  .textsection {
+    width: 750px;
+  }
+
+  .boxsection {
+    width: 800px;
+    height: 100%;
+  }
+
+  .inline-block {
+    margin-right: 10px;
+    padding-right: 15px;
+  }
 }
