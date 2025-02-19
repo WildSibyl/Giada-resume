@@ -1,0 +1,164 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: system-ui;
+    background-color: #efefef;
+  }
+  
+  /* Header styling */
+  header {
+    padding: 2rem 4rem;
+    border-bottom: 2px solid #29213f;
+    text-align: center;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header a {
+    color: inherit;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+    color: hotpink;
+  }
+  
+  /* Profile image styling */
+  header img {
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(1);
+    margin: 1rem auto;
+  }
+  
+  /* Name styling */
+  header h1 {
+    text-align: center;
+    color: orangered;
+    text-decoration: underline;
+  }
+  
+  /* Main layout adjustments */
+  main {
+    margin: 2rem 4rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  section p {
+    max-width: 80ch;
+  }
+  
+  /* Education, Experience, and Skills text adjustments */
+  section li h3, section li p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Bullet point spacing */
+  section li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small screens */
+  main {
+    margin: 1rem 3rem;
+  }
+  
+  .boxsection {
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .inline-block {
+    width: 90%;
+    padding-right:15px;
+   }
+  
+}
+  /* Small devices (portrait tablets and large phones, 600px to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* CSS rules for small screens */
+    main {
+      margin: 1rem 4rem;
+    }
+    
+    .boxsection {
+      width:75%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inline-block {
+      width: 90%;
+      padding-right:15px;
+     }
+  }
+ 
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for medium screens */
+  .textsection {
+    width:75%;
+  }
+  
+  .boxsection {
+    width:82%;
+    height: 100%
+  }
+
+  .inline-block {
+   margin-right: 10px;
+   padding-right:15px;
+  }
+}
+ 
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for large screens */
+  .textsection {
+    width:75%;
+  }
+  
+  .boxsection {
+    width:82%;
+    height: 100%
+  }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+  /* CSS rules for extra large screens */
+  .textsection {
+    width:750px;
+  }
+  
+  .boxsection {
+    width:800px;
+    height: 100%
+  }
+
+  .inline-block {
+    margin-right: 10px;
+    padding-right:15px;
+   }
+}
